@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gonzalo De Lorenzo - Diseño y Desarrollo Web</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { color: #ff4b2b; }
+
+    nav a {
+      color: #fff; margin-left: 1.5rem; text-decoration: none; font-weight: bold;
+    }
+    nav a:hover { color: #ff4b2b; }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+      height: 90vh;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; color: #fff; padding: 0 1rem;
+    }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+    .btn {
+      background: #ff4b2b; color: #fff; padding: 0.8rem 1.5rem;
+      border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; text-decoration: none;
+    }
+    .btn:hover { background: #e63e20; }
+
+    section { padding: 4rem 2rem; max-width: 1100px; margin: auto; }
+    h2 { margin-bottom: 1.5rem; color: #ff4b2b; }
+
+    .services, .portfolio {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;
+    }
+    .card {
+      background: #f4f4f4; padding: 2rem; border-radius: 10px; text-align: center;
+      transition: 0.3s;
+    }
+    .card:hover { background: #eaeaea; transform: translateY(-5px); }
+
+    footer {
+      background: #111; color: #fff; text-align: center; padding: 2rem;
+    }
+    footer a { color: #ff4b2b; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GDL Web</h1>
+    <nav>
+      <a href="#about">Sobre mí</a>
+      <a href="#services">Servicios</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Hola, soy Gonzalo De Lorenzo</h2>
+    <p>Creo páginas web modernas y optimizadas para negocios locales y emprendedores.</p>
+    <a href="#contact" class="btn">Contáctame</a>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p>Soy desarrollador web independiente, apasionado por la tecnología y el deporte. Me especializo en crear sitios web simples, rápidos y atractivos que ayudan a negocios a tener presencia online profesional.</p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="services">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Diseño Web</h3>
+        <p>Páginas modernas y responsivas, adaptadas a celulares y computadoras.</p>
+      </div>
+      <div class="card">
+        <h3>Landing Pages</h3>
+        <p>Webs de una sola página, ideales para negocios locales o campañas específicas.</p>
+      </div>
+      <div class="card">
+        <h3>SEO Básico</h3>
+        <p>Optimización para que tu negocio aparezca mejor en Google.</p>
+      </div>
+      <div class="card">
+        <h3>Soporte</h3>
+        <p>Actualizaciones y mantenimiento para que tu web siempre esté online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="card">
+        <h3>PowerGym</h3>
+        <p>L
